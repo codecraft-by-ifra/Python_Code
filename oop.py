@@ -23,8 +23,15 @@ class Student:
 s = Student("mehar", 98)
 print(s.name, s.marks)
 
+d = Student("giya", 98)
+print(s.name, s.marks)
+
 ss = Student("ifra", 95)
 print(ss.name, ss.marks)
+del d        # del d  deleting the instance d
+
+
+
 print(s.welcome())
 print('..................................................')
 
