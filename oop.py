@@ -40,6 +40,7 @@ print('..................................................')
 # Then create a method to print the average.
 
 class Std:
+    comp = 'azire'
 
     def __init__(self, name, sub1, sub2, sub3):
         self.name = name
@@ -55,6 +56,10 @@ class Std:
     def conclusion():
         print( 'its endinggggg ')
 
+    @classmethod          # for chnging the value permanently
+    def changename(cls, comp):
+        cls.comp = comp
+
 c1 = Std("alia", 66, 84, 98)
 c2 = Std("saba", 87, 54, 45)
 c3 = Std("zuha", 56, 83, 67)
@@ -64,3 +69,8 @@ c1.average()
 c2.average()
 c3.average()
 c3.conclusion()
+print(c1.comp)
+c1.changename("cringe")
+print(c1.comp)
+
+
