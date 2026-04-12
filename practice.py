@@ -1,4 +1,4 @@
-# write a function which takes input and print the input is even or odd
+# # write a function which takes input and print the input is even or odd
 def isEven_Odd(n):
     if n%2 == 0:
         return (f'{n} is the Even Number')
@@ -18,6 +18,26 @@ def isFactorial(n):
     return(f'The Factorial of {n} = {fact} ')
 
 print (isFactorial(3))
+print('.........................................')
+
+# write a function to find factorial through recursion
+
+def fact(n):
+    if(n == 0 or n== 1):
+        return 1
+    return n* fact(n-1)
+f = fact(7)
+print(f'The Factorial is = {f}')
+print('.........................................')
+
+# write a function to find sum of  first natural number through recursion
+def sum_Factorial(n):
+    if n == 0:
+        return 0
+    return n + sum_Factorial(n-1)
+
+n= 30
+print(f'The sum of {n} is : {sum_Factorial(n)}')
 print('.........................................')
 
 
@@ -64,6 +84,7 @@ Emp = Employee('Manager', 'Softwar Tech', 120000)
 Emp.showdetails()
 print('.......................................')
 
+
 # Create an Engineer class that inherits properties from Employee & 
 # has additional attributes : name & age.
 
@@ -81,3 +102,4 @@ Eng = Engineer('Accountant','Finance','80000', 'Zain', 22)
 Eng.showEngDetail()
 Eng.showdetails()
 print('............................................')
+
