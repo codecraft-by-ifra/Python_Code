@@ -1,3 +1,26 @@
+# write a function which takes input and print the input is even or odd
+def isEven_Odd(n):
+    if n%2 == 0:
+        return (f'{n} is the Even Number')
+    else:
+        return (f'{n} is the Odd Number')
+    
+num = int(input('Enter a Number : '))
+print (isEven_Odd(num))
+print('.........................................')
+
+
+# write a function to find the factorial of n
+def isFactorial(n):
+    fact= 1
+    for i in range(1, n+1):
+        fact *= i
+    return(f'The Factorial of {n} = {fact} ')
+
+print (isFactorial(3))
+print('.........................................')
+
+
 # Define a Circle class to create a circle with radius r using the constructor.
 # Define an Area() method of the class which calculates the area of the circle.
 # Define a Perimeter() method of the class which allows you to calculate the perimeter of the
@@ -57,3 +80,4 @@ class Engineer(Employee):
 Eng = Engineer('Accountant','Finance','80000', 'Zain', 22)
 Eng.showEngDetail()
 Eng.showdetails()
+print('............................................')
