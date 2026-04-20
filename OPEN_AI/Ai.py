@@ -9,8 +9,7 @@ client = OpenAI(
 
 response = client.responses.create(
   model="gpt-5-nano",
-  input="write 10 tools name of Ai in list form",
+  input="write 10 tools name of Ai",
   store=True,
 )
-
 print(response.output_text);
