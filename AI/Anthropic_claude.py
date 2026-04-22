@@ -7,7 +7,7 @@ client = Anthropic(
     api_key= os.getenv("ANTHROPIC_API_KEY")
     )
 response = client.messages.create(
-  model="claude-3-5-sonnet-20240620",
+  model="claude-opus-4-7",
   system="You are a helpful assistant.",
   messages =[{
           "role": "user",
