@@ -18,7 +18,6 @@ def data(prompt):
 
     return text, Tokens
 
-
 def calculate_cost(tokens):
     cost_per_1k = 0.00025
     return (tokens / 1000) * cost_per_1k
